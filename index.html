@@ -67,7 +67,7 @@
     padding: 0 28px;
   }
 
-  /* ---------- nav ---------- */
+  /* nav */
   nav {
     position: sticky;
     top: 0;
@@ -96,7 +96,7 @@
   .nav-links a { color: var(--text-dim); }
   .nav-links a:hover { color: var(--phosphor); }
 
-  /* ---------- hero ---------- */
+  /* hero */
   header.hero {
     padding: 72px 0 52px;
     border-bottom: 1px solid var(--line);
@@ -188,7 +188,7 @@
   }
   .contact-row a:hover { color: var(--phosphor); border-color: var(--phosphor); }
 
-  /* ---------- section shell ---------- */
+  /* section shell */
   section { padding: 64px 0; border-bottom: 1px solid var(--line); }
   section:last-of-type { border-bottom: none; }
 
@@ -211,7 +211,7 @@
     background: var(--line);
   }
 
-  /* ---------- about ---------- */
+  /* about */
   .about-text {
     font-size: 16px;
     color: var(--text-dim);
@@ -220,7 +220,7 @@
   .about-text p { margin: 0 0 16px; }
   .about-text p:last-child { margin-bottom: 0; }
 
-  /* ---------- skills / pinout table ---------- */
+  /* skills table */
   .pin-table {
     border: 1px solid var(--line);
     border-radius: 4px;
@@ -247,7 +247,7 @@
     color: var(--text-dim);
   }
 
-  /* ---------- experience ---------- */
+  /* experience */
   .job {
     display: grid;
     grid-template-columns: 130px 1fr;
@@ -282,7 +282,7 @@
   .job li { margin-bottom: 7px; }
   .job li:last-child { margin-bottom: 0; }
 
-  /* ---------- projects ---------- */
+  /* projects */
   .project {
     border: 1px solid var(--line);
     border-radius: 4px;
@@ -397,7 +397,7 @@
   .project li { margin-bottom: 7px; }
   .project li:last-child { margin-bottom: 0; }
 
-  /* ---------- awards ---------- */
+  /* awards */
   .award {
     display: flex;
     gap: 14px;
@@ -416,7 +416,7 @@
   }
   .award strong { color: var(--text); }
 
-  /* ---------- footer / contact ---------- */
+  /* footer / contact */
   footer {
     padding: 56px 0 72px;
   }
@@ -495,12 +495,11 @@
   <header class="hero">
     <div class="hero-layout">
       <div class="hero-content">
-        <div class="chip-label"><span class="dot"></span>OPEN TO CO-OP / NEW GRAD ROLES</div>
+        <div class="chip-label"><span class="dot"></span>OPEN TO CO-OP / INTERNSHIPS</div>
         <h1 class="name">Armaan Bains</h1>
         <p class="role-line">
-          <strong>Embedded systems &amp; hardware engineer</strong> — firmware, RTL, and robotics.
-          ECE student at the University of Toronto, currently building things that sit
-          at the boundary of silicon and software.
+          <strong>Embedded Systems &amp; Systems Software Engineer</strong>: firmware, digital hardware, and low-level software.
+          ECE student at the University of Toronto, building high-performance systems from bare-metal C++ up to custom RTL and robotics.
         </p>
         <div class="contact-row">
           <a href="mailto:armaan.bains@mail.utoronto.ca">armaan.bains@mail.utoronto.ca</a>
@@ -518,12 +517,8 @@
   <section id="about">
     <div class="sec-head"><h2>About</h2><div class="rule"></div></div>
     <div class="about-text">
-      <p>I'm an Electrical and Computer Engineering student at the University of Toronto (BASc + PEY Co-op),
-      focused on embedded firmware, digital hardware, and the systems that connect the two. Most of my work
-      lives in C++ close to the metal — driving PWM peripherals, reverse-engineering RTL, or building the
-      control loops that make a robot arm move where it's supposed to.</p>
-      <p>I like projects that force me to understand a system end to end: from a transistor-level PCB trace,
-      up through firmware, up to the vision model deciding what to grab next.</p>
+      <p>I'm an Electrical and Computer Engineering student at the University of Toronto (BASc + PEY Co-op), focused on embedded firmware, digital hardware, and systems software development. Most of my work lives in C++ close to the metal, whether that's architecting large-scale GIS routing engines and low-latency algorithms, driving PWM peripherals, or implementing the real-time kinematics that keep a robotic arm on target.</p>
+      <p>I like projects that force me to understand a system end to end: from a transistor-level PCB trace and bare-metal firmware, up to the algorithms, data structures, and vision models running on top.</p>
     </div>
   </section>
 
@@ -544,7 +539,7 @@
       </div>
       <div class="pin-row">
         <div class="pin-label">DOMAINS</div>
-        <div class="pin-values">Firmware–hardware debugging, pre-silicon emulation, computer vision (OpenCV, YOLOv8), Linux development</div>
+        <div class="pin-values">Firmware / hardware debugging, pre-silicon emulation, computer vision (OpenCV, YOLOv8), Linux development</div>
       </div>
       <div class="pin-row">
         <div class="pin-label">TEAM</div>
@@ -557,7 +552,7 @@
     <div class="sec-head"><h2>Experience</h2><div class="rule"></div></div>
 
     <div class="job">
-      <div class="job-when">May 2025 —<br>Sep 2025</div>
+      <div class="job-when">May 2025 to<br>Sep 2025</div>
       <div>
         <p class="job-title">Research Intern</p>
         <p class="job-org">Intelligent Sensory Microsystems Lab (ISML), University of Toronto</p>
@@ -565,13 +560,13 @@
           <li>Reverse-engineered top-level Verilog RTL across 5+ major Time-of-Flight sensor source files, mapping FSMs, ADC readout control signals, and pixel-bucket timing diagrams into system breakdowns.</li>
           <li>Engineered Python control scripts to drive microcontroller GPIO pins on camera-ToF PCBs, dynamically triggering Verilog timing state transitions for live parameter testing by lab researchers.</li>
           <li>Performed waveform-level signal analysis and PCB signal tracing to debug timing issues and firmware/hardware mismatches across 3 PCB revisions.</li>
-          <li>Documented verification findings and presented architectural breakdowns across 16+ peer design reviews, accelerating onboarding for new lab researchers.</li>
+          <li>Documented verification findings and presented architectural breakdowns across 16+ peer design reviews.</li>
         </ul>
       </div>
     </div>
 
     <div class="job">
-      <div class="job-when">May 2024 —<br>Sep 2024</div>
+      <div class="job-when">May 2024 to<br>Sep 2024</div>
       <div>
         <p class="job-title">Produce &amp; Overnight Stocking Associate</p>
         <p class="job-org">Costco Wholesale</p>
@@ -589,12 +584,12 @@
     <!-- 1. Robotic Arm -->
     <div class="project">
       <div class="project-media">
-        <img src="images/robotProfile.png" alt="6-DOF autonomous object tracking robotic arm prototype">
+        <img src="images/robotProfile.png" alt="Autonomous object tracking robotic arm prototype">
       </div>
       <div class="project-head">
         <div class="project-title-row">
           <span class="led" style="background: var(--led-robotics); box-shadow:0 0 5px var(--led-robotics);"></span>
-          <span class="project-title">6-DOF Autonomous Object Tracking Robotic Arm</span>
+          <span class="project-title">Autonomous Object Tracking Robotic Arm</span>
         </div>
         <span class="project-date">2026</span>
       </div>
@@ -612,10 +607,10 @@
 
       <p class="project-stack">C++ · Python · OpenCV · ESP32 · YOLOv8 · Fusion 360</p>
       <ul>
-        <li>Built a real-time embedded firmware stack on an ESP32 driving a 5-channel servo array via 12-bit hardware PWM at 50Hz — no convenience libraries, all native PWM drivers.</li>
+        <li>Built a real-time embedded firmware stack on an ESP32 driving a 5-channel servo array via 12-bit hardware PWM at 50Hz, utilizing native PWM drivers without external convenience libraries.</li>
         <li>Wrote a custom 3D geometric Inverse Kinematics engine in C++ to convert Cartesian target vectors into joint duty cycles in real time.</li>
         <li>Implemented an automated wrist self-leveling loop to counter-rotate the end-effector and hold a stable posture through fast movements.</li>
-        <li>Built a vision pipeline with a custom-trained YOLOv8 model (&gt;83% confidence) and a 3×3 homography matrix to map pixel coordinates to physical workbench coordinates for closed-loop pick-and-place.</li>
+        <li>Built a vision pipeline with a custom-trained YOLOv8 model to map pixel coordinates to physical workbench coordinates for closed-loop pick-and-place.</li>
         <li>Designed a parallel-tracking gripper with passive compliance, and every mechanical component of the arm, in Fusion 360.</li>
       </ul>
     </div>
@@ -628,7 +623,7 @@
       <div class="project-head">
         <div class="project-title-row">
           <span class="led" style="background: var(--led-firmware); box-shadow:0 0 5px var(--led-firmware);"></span>
-          <span class="project-title">FluxGrip — Workout Set &amp; Rep Tracker</span>
+          <span class="project-title">FluxGrip: Workout Set &amp; Rep Tracker</span>
         </div>
         <span class="project-date">Jul 2026</span>
       </div>
@@ -648,7 +643,7 @@
       <ul>
         <li>Wrote a bare-metal C++ I2C driver for an MPU-6050 IMU, parsing raw 6-axis accelerometer and gyroscope data.</li>
         <li>Built a spatial orientation and kinematics engine using Mahony sensor fusion and quaternion math, feeding an on-device Edge Impulse TinyML model across 10+ exercise classes.</li>
-        <li>Engineered real-time peak-detection algorithms to identify rep boundaries and segment eccentric/concentric phases.</li>
+        <li>Engineered real-time peak-detection algorithms to identify rep boundaries and segment eccentric and concentric phases.</li>
         <li>Designed a custom two-layer PCB in KiCad integrating the ESP32 and IMU into a wearable form factor.</li>
       </ul>
     </div>
@@ -661,7 +656,7 @@
       <div class="project-head">
         <div class="project-title-row">
           <span class="led" style="background: var(--led-fpga); box-shadow:0 0 5px var(--led-fpga);"></span>
-          <span class="project-title">Neural Network Hardware Accelerator</span>
+          <span class="project-title">Neural Network Hardware Accelerator (MNIST)</span>
         </div>
         <span class="project-date">Aug 2026</span>
       </div>
@@ -679,7 +674,7 @@
 
       <p class="project-stack">SystemVerilog · PyTorch · ModelSim · Quartus · DE1-SoC</p>
       <ul>
-        <li>Architected an INT8 pipelined deep learning accelerator on a Cyclone V FPGA, with Python PTQ scripts to quantize Float32 PyTorch weights into .hex memory files.</li>
+        <li>Architected an INT8 pipelined deep learning accelerator on a Cyclone V FPGA for MNIST handwritten digit recognition, using Python PTQ scripts to quantize Float32 PyTorch weights into .hex memory files.</li>
         <li>Designed an RTL datapath with an 8-bit MAC engine and 27-bit accumulator for 784-element dot products, plus custom ReLU and ArgMax classification logic.</li>
         <li>Implemented a multi-state control FSM and verified cycle-accurate RTL waveforms in ModelSim before synthesis.</li>
       </ul>
@@ -706,7 +701,7 @@
       <ul>
         <li>Built a cycle-accurate CPU emulator in C++ decoding and executing the RV32I base instruction set, with a 32-entry register file and a 1MB simulated RAM system bus.</li>
         <li>Developed an integrated single-pass assembler to compile human-readable assembly into 32-bit machine code in real time.</li>
-        <li>Built an interactive terminal debugger with FTXUI — live register visualization, aligned memory hex dumps, and single-step execution.</li>
+        <li>Built an interactive terminal debugger with FTXUI featuring live register visualization, aligned memory hex dumps, and single-step execution.</li>
       </ul>
     </div>
 
@@ -736,9 +731,9 @@
 
       <p class="project-stack">C++ · GTK · GDB · Linux</p>
       <ul>
-        <li>Built a GIS routing engine supporting 20,000+ intersections with interactive POI search and map rendering[cite: 1].</li>
-        <li>Implemented an efficient caching layer and query system, reducing memory overhead and keeping large-scale map rendering smooth in real time[cite: 1].</li>
-        <li>Implemented Dijkstra's and A* algorithms for shortest-path computation, halving routing time from 6ms to 3ms[cite: 1].</li>
+        <li>Built a GIS routing engine supporting 20,000+ intersections with interactive POI search and map rendering.</li>
+        <li>Implemented an efficient caching layer and query system, reducing memory overhead and keeping large-scale map rendering smooth in real time.</li>
+        <li>Implemented Dijkstra's and A* algorithms for shortest-path computation, halving routing time from 6ms to 3ms.</li>
       </ul>
     </div>
   </section>
@@ -746,7 +741,6 @@
   <section id="education">
     <div class="sec-head"><h2>Education</h2><div class="rule"></div></div>
     <div class="job" style="margin-bottom:0;">
-      <div class="job-when">2022 —<br>2029</div>
       <div>
         <p class="job-title">BASc, Electrical and Computer Engineering + PEY Co-op</p>
         <p class="job-org">University of Toronto</p>
@@ -761,13 +755,13 @@
     <div class="sec-head"><h2>Awards</h2><div class="rule"></div></div>
     <div class="award">
       <span class="mark">&#9679;</span>
-      <p><strong>1st Place, UTEK Junior Design Competition</strong> — OEC Provincial Finalist. Engineered a winning design prototype under strict time and material constraints, selected to represent U of T at the Ontario Engineering Competition.</p>
+      <p><strong>1st Place, UTEK Junior Design Competition</strong>: OEC Provincial Finalist. Engineered a winning design prototype under strict time and material constraints, selected to represent U of T at the Ontario Engineering Competition.</p>
     </div>
   </section>
 
   <footer id="contact">
     <h2>Get in touch</h2>
-    <p>Looking for embedded, firmware, or hardware-adjacent co-op and new-grad roles. Always happy to talk through a project or a problem.</p>
+    <p>Looking for embedded, firmware, or hardware-adjacent co-op and internship roles. Always happy to talk through a project or a problem.</p>
     <div class="cta-row">
       <a class="btn primary" href="mailto:armaan.bains@mail.utoronto.ca">Email me</a>
       <a class="btn" href="https://github.com/armaanbains1" target="_blank" rel="noopener">GitHub</a>
