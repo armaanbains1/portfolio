@@ -674,9 +674,9 @@
 
       <p class="project-stack">SystemVerilog · PyTorch · ModelSim · Quartus · DE1-SoC</p>
       <ul>
-        <li>Architected an INT8 pipelined deep learning accelerator on a Cyclone V FPGA for MNIST handwritten digit recognition, using Python PTQ scripts to quantize Float32 PyTorch weights into .hex memory files.</li>
-        <li>Designed an RTL datapath with an 8-bit MAC engine and 27-bit accumulator for 784-element dot products, plus custom ReLU and ArgMax classification logic.</li>
-        <li>Implemented a multi-state control FSM and verified cycle-accurate RTL waveforms in ModelSim before synthesis.</li>
+        <li>Architected an INT8 deep learning accelerator on a Cyclone V FPGA (DE1-SoC) for MNIST inference, engineering a custom post-training quantization pipeline with 20-bit accumulator-scaled biases to resolve input background DC offsets.</li>
+        <li>Designed an RTL datapath featuring an 8-bit signed MAC engine, a 27-bit accumulator, and fixed-point hardware requantization (∗1462⋙20) with saturation clamping alongside custom ReLU and ArgMax modules.</li>
+        <li>Implemented a multi-state control FSM executing full inference in 31,610 clock cycles (632.2 μs latency at 50 MHz), achieving over 1,580 classifications/sec verified on-chip via Signal Tap Logic Analyzer.</li>
       </ul>
     </div>
 
@@ -731,9 +731,9 @@
 
       <p class="project-stack">C++ · GTK · GDB · Linux</p>
       <ul>
-        <li>Built a GIS routing engine supporting 20,000+ intersections with interactive POI search and map rendering.</li>
-        <li>Implemented an efficient caching layer and query system, reducing memory overhead and keeping large-scale map rendering smooth in real time.</li>
-        <li>Implemented Dijkstra's and A* algorithms for shortest-path computation, halving routing time from 6ms to 3ms.</li>
+        <li>Architected high-performance spatial data structures using hash maps and sets to index OpenStreetMap entities, enabling low-latency intersection lookups and street topology queries.</li>
+        <li>Implemented geographic distance algorithms using spherical to Cartesian equirectangular projections and engineered set-intersection routines to identify multi-street junctions.</li>
+        <li>Built an interactive GTK search interface featuring real-time autocomplete via case-insensitive prefix-matching algorithms and dual-point intersection highlighting.</li>
       </ul>
     </div>
   </section>
