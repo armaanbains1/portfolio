@@ -38,7 +38,6 @@
     -webkit-font-smoothing: antialiased;
   }
 
-  /* faint circuit-grid backdrop */
   body::before{
     content:"";
     position: fixed;
@@ -305,26 +304,6 @@
     height: 240px;
     object-fit: cover;
   }
-  .project-media.placeholder{
-    height: 160px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    background:
-      repeating-linear-gradient(45deg, var(--bg-panel-2), var(--bg-panel-2) 10px, var(--bg) 10px, var(--bg) 20px);
-  }
-  .project-media.placeholder .ph-label{
-    font-family: var(--mono);
-    font-size: 11px;
-    letter-spacing: 0.03em;
-    color: var(--text-faint);
-    background: var(--bg);
-    border: 1px solid var(--line);
-    padding: 5px 10px;
-    border-radius: 3px;
-  }
 
   .project-head{
     display: flex;
@@ -529,7 +508,7 @@
         </div>
       </div>
       <div class="hero-avatar">
-        <img src="images/profile.jpg" alt="Armaan Bains">
+        <img src="profile.jpg" alt="Armaan Bains">
       </div>
     </div>
   </header>
@@ -607,7 +586,9 @@
 
     <!-- 1. Robotic Arm -->
     <div class="project">
-      <div class="project-media placeholder"><span class="ph-label">PHOTO / DEMO PREVIEW</span></div>
+      <div class="project-media">
+        <img src="robotProfile.png" alt="6-DOF autonomous object tracking robotic arm prototype">
+      </div>
       <div class="project-head">
         <div class="project-title-row">
           <span class="led" style="background: var(--led-robotics); box-shadow:0 0 5px var(--led-robotics);"></span>
@@ -640,7 +621,7 @@
     <!-- 2. FluxGrip -->
     <div class="project">
       <div class="project-media">
-        <img src="images/fluxgrip.png" alt="FluxGrip AI real-time embedded performance analytics interface tracking workout reps">
+        <img src="fluxgripthumbnail.png" alt="FluxGrip AI real-time embedded performance analytics interface tracking workout reps">
       </div>
       <div class="project-head">
         <div class="project-title-row">
@@ -672,7 +653,9 @@
 
     <!-- 3. Neural Network Accelerator -->
     <div class="project">
-      <div class="project-media placeholder"><span class="ph-label">PHOTO / WAVEFORM PREVIEW</span></div>
+      <div class="project-media">
+        <img src="fpgaAccelerator.png" alt="FPGA neural network accelerator hardware layout and waveforms">
+      </div>
       <div class="project-head">
         <div class="project-title-row">
           <span class="led" style="background: var(--led-fpga); box-shadow:0 0 5px var(--led-fpga);"></span>
@@ -728,7 +711,7 @@
 
     <!-- 5. GIS Navigation -->
     <div class="project">
-      <div class="project-media"><img src="images/gis.png" alt="GIS navigation application showing a routable street map of Toronto alongside the control panel with search, zoom, and category filters"></div>
+      <div class="project-media"><img src="gis.png" alt="GIS navigation application showing a routable street map of Toronto alongside the control panel with search, zoom, and category filters"></div>
       <div class="project-head">
         <div class="project-title-row">
           <span class="led" style="background: var(--led-robotics); box-shadow:0 0 5px var(--led-robotics);"></span>
